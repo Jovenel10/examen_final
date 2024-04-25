@@ -1,0 +1,18 @@
+<!-- templates/modifier_livre.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier le livre</title>
+</head>
+<body>
+    <h1>Modifier les informations du livre</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Pré-remplir les champs avec les données existantes du livre -->
+        <!-- Ajoutez les champs du formulaire ici -->
+        <button type="submit">Enregistrer les modifications</button>
+    </form>
+</body>
+</html>

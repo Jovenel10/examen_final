@@ -1,0 +1,17 @@
+<!-- templates/supprimer_livre.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer le livre</title>
+</head>
+<body>
+    <h1>Confirmer la suppression du livre</h1>
+    <p>Êtes-vous sûr de vouloir supprimer le livre "{{ livre.titre }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirmer la suppression</button>
+    </form>
+</body>
+</html>
